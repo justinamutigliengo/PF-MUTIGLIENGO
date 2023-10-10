@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="ruta-a/fontawesome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Sans&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="opacity-75">
+      <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand titulo-bodega" href="#">Bodega & Wine Bar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >NOSOTROS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./listado_productos.html"
+                  >VINOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./alta_producto.html"
+                  >ALTA DE PRODUCTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./testimonios.html"
+                  >TESTIMONIOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Alta de producto</h2>
+      <form>
+        <fieldset>
+          <div class="row">
+            <div class="col-6">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text" />
+            </div>
+            <div class="col-6">
+              <label for="precio">Precio</label>
+              <input id="precio" type="number" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="row">
+            <div class="col-6">
+              <label for="stock">Stock</label>
+              <input id="stock" type="number" />
+            </div>
+            <div class="col-6">
+              <label for="stock-minimo">Stock minimo</label>
+              <input id="stock-minimo" type="number" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="row">
+            <div class="col-6">
+              <label for="fecha-alta">Fecha de alta</label>
+              <input id="fecha-alta" type="date" value="2021-08-27" />
+            </div>
+            <div class="col-6">
+              <label for="hora-alta">Hora de alta</label>
+              <input id="hora-alta" type="time" value="15:58" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="row">
+            <div class="col-5">
+              <img src="../images/" alt="" height="90px" />
+
+              <label for="archivo-imagen">Imagen</label>
+              <input id="archivo-imagen" type="file" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="col-3">
+            <label for="cuotas-sin-interes">Cuotas sin interes</label>
+          </div>
+          <div class="col-4">
+            <select id="cuotas-sin-interes">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6" selected>6</option>
+              <option value="9">9</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="row">
+            <div class="col-6">
+              <label for="origen-nacional">Nacional</label>
+              <input id="origen-nacional" type="radio" name="origen" />
+            </div>
+            <div class="col-6">
+              <label for="origen-importado">Importado</label>
+              <input id="origen-importado" type="radio" name="origen" checked />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="row">
+            <div class="col-6">
+              <label for="envio-gratis">Envio gratis</label>
+              <input id="envio-gratis" type="checkbox" checked />
+            </div>
+            <div class="col-6">
+              <label for="garantia">Garantia</label>
+              <input id="garantia" type="checkbox" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <textarea
+            placeholder="Observaciones"
+            name="area-texto"
+            id="area-texto"
+            cols="80"
+            rows="5"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <input type="submit" value="Guardar" class="btn-custom" />
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="../images/logo-bodega.png"
+              alt="Logo de Bodega & Wine Bar"
+            />
+          </div>
+          <div class="footer-info">
+            <p>Dirección: Calle de la Bodega, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@bodegaywinebar.com</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <div class="redes-sociales">
+              <a href="#"
+                ><img src="../images/facebook-logo.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="../images/twitter-logo.png" alt="Twitter"
+              /></a>
+              <a href="#"
+                ><img src="../images/instagram-logo.png" alt="Instagram"
+              /></a>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-bottom">
+            2023 Bodega & Wine Bar. Todos los derechos reservados.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
