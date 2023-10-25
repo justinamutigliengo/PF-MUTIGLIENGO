@@ -1,0 +1,19 @@
+nav {
+  background-color: rgb(192, 192, 192);
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(56, 54, 54, 0.034);
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=nav.css.map */
