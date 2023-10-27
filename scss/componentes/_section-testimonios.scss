@@ -1,0 +1,45 @@
+.testimonios {
+  @include flex-column-center;
+}
+
+.testimonio {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  @include box-shadow(5px, 5px, 10px, rgba(0, 0, 0, 0.1));
+  text-align: center;
+}
+
+.testimonio p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+.testimonios h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonio .autor {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+.autor {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+@media (min-width: 992px) {
+  .img-desktop-large {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}

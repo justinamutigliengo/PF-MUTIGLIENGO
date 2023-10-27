@@ -1,0 +1,48 @@
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin label-styles {
+  font-family: $font-slabo-27;
+  display: block;
+  margin-bottom: 5px;
+  font-size: $form-font-size;
+  font-weight: bold;
+  color: #2c2a2a;
+}
+
+@mixin form-field-styles {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: $form-font-size;
+}
+
+@mixin button-styles {
+  font-family: $font-slabo-27;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba($color-destacado-header, 0.64);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: $form-font-size;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-hover-header;
+  }
+}

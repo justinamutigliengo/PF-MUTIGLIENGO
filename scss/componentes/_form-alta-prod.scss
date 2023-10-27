@@ -1,0 +1,24 @@
+fieldset {
+  @extend %fieldset-styles;
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    font-family: $font-slabo-27;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    color: #333;
+  }
+
+  .btn-custom {
+    @include button-styles;
+    font-family: $font-slabo-27;
+    background-color: rgba($color-destacado-header, 0.64);
+    border: 2px solid rgba($color-destacado-header, 0.39);
+  }
+}

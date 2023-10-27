@@ -3,22 +3,32 @@ header {
   background-color: $background-color-header;
   color: $text-color-header;
   padding: 20px 0;
-  @extend %center-text;
+  @include center-text;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
 
+  nav div a {
+    font-size: 28px;
+    font-weight: 300;
+    color: #8b0000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+  }
+
   .titulo-bodega {
     font-size: 24px;
-    font-weight: bold;
-    color: #ec0c2e;
+    font-weight: $nav-header-font-weight;
+    color: $color-destacado-header;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 3s;
   }
 
   .titulo-bodega:hover {
-    color: #420413;
+    color: $color-hover-header;
   }
 }

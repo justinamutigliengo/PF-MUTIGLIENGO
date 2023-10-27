@@ -1,0 +1,39 @@
+.formulario {
+  form {
+    .row {
+      .col-6 {
+        label {
+          @include label-styles;
+          font-family: $font-slabo-27;
+          font-size: 16px;
+          color: $primary-color;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+          @include form-field-styles;
+        }
+      }
+
+      label[for="mensaje"] {
+        textarea {
+          @include form-field-styles;
+          resize: vertical;
+        }
+      }
+    }
+
+    .btn-custom {
+      @include button-styles;
+      font-family: $font-slabo-27;
+      background-color: rgba($color-destacado-header, 0.64);
+      border: 2px solid rgba($color-destacado-header, 0.39);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .formulario {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  font-family: $font-pt-sans;
+  background: $background-color-body;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  filter: none;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 1024px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 12px;
+    }
+  }
+}

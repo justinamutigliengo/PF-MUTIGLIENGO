@@ -1,0 +1,27 @@
+table {
+  font-family: "Slabo 27px", serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+p {
+  font-family: $font-lato;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}

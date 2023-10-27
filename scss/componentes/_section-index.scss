@@ -1,0 +1,23 @@
+h2 {
+  font-family: $font-pt-sans;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-family: $font-lato;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .img-desktop-large {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}

@@ -1,0 +1,29 @@
+.testimonial-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonial-form label,
+.testimonial-form textarea,
+.testimonial-form input[type="text"] {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.testimonial-form input:focus,
+.testimonial-form textarea:focus {
+  border: 2px solid rgba(145, 22, 22, 0.39);
+  outline: none;
+}
+
+form {
+  .btn-custom {
+    @include button-styles;
+    font-family: $font-slabo-27;
+    background-color: rgba($color-destacado-header, 0.64);
+    border: 2px solid rgba($color-destacado-header, 0.39);
+  }
+}
