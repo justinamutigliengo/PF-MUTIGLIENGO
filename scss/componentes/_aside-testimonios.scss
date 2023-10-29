@@ -1,5 +1,5 @@
 aside {
-  font-family: $font-lato;
+  font-family: map-get($font-families, "Lato");
 
   .testimonial-section {
     background-color: #f9f9f9;

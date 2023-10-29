@@ -8,7 +8,7 @@
 }
 
 h2 {
-  font-family: $font-pt-sans;
+  font-family: map-get($font-families, "PT Sans");
   font-size: 28px;
   color: #333;
   margin-bottom: 20px;
@@ -17,7 +17,7 @@ h2 {
 }
 
 p {
-  font-family: $font-lato;
+  font-family: map-get($font-families, "Lato");
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;

@@ -1,5 +1,5 @@
 footer {
-  font-family: $font-pt-sans;
+  font-family: map-get($font-families, "PT Sans");
   background-color: $background-color-footer;
   color: $text-color-footer;
   text-align: center;

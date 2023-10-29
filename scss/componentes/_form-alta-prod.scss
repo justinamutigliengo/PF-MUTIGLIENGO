@@ -6,7 +6,7 @@ fieldset {
   input[type="date"],
   input[type="time"],
   textarea {
-    font-family: $font-slabo-27;
+    font-family: map-get($font-families, "Slabo 27px");
     font-size: 16px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -17,7 +17,7 @@ fieldset {
 
   .btn-custom {
     @include button-styles;
-    font-family: $font-slabo-27;
+    font-family: map-get($font-families, "Slabo 27px");
     background-color: rgba($color-destacado-header, 0.64);
     border: 2px solid rgba($color-destacado-header, 0.39);
   }

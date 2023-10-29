@@ -1,5 +1,5 @@
 header {
-  font-family: $font-slabo-27;
+  font-family: map-get($font-families, "Slabo 27px");
   background-color: $background-color-header;
   color: $text-color-header;
   padding: 20px 0;

@@ -1,5 +1,5 @@
 body {
-  font-family: $font-pt-sans;
+  font-family: map-get($font-families, "PT Sans");
   background: $background-color-body;
   background-size: cover;
   background-repeat: no-repeat;

@@ -5,46 +5,43 @@
 }
 
 fieldset {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato, sans-serif";
   margin-bottom: 20px;
 }
 
 table {
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   width: 100%;
   border-collapse: collapse;
 }
-
-th,
-td {
+table th,
+table td {
   padding: 10px;
   text-align: left;
 }
-
-th {
+table th {
   background-color: #333;
   color: white;
 }
-
-tr:nth-child(even) {
+table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato, sans-serif";
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .formulario form .row .col-6 label {
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   display: block;
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: bold;
   color: #2c2a2a;
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   font-size: 16px;
   color: #333;
 }
@@ -67,7 +64,7 @@ p {
   resize: vertical;
 }
 .formulario form .btn-custom {
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(236, 12, 46, 0.64);
@@ -77,7 +74,7 @@ p {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   background-color: rgba(236, 12, 46, 0.64);
   border: 2px solid rgba(236, 12, 46, 0.39);
 }
@@ -95,7 +92,7 @@ fieldset input[type=number],
 fieldset input[type=date],
 fieldset input[type=time],
 fieldset textarea {
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   font-size: 16px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -103,9 +100,8 @@ fieldset textarea {
   width: 100%;
   color: #333;
 }
-
 fieldset .btn-custom {
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(236, 12, 46, 0.64);
@@ -115,7 +111,7 @@ fieldset .btn-custom {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   background-color: rgba(236, 12, 46, 0.64);
   border: 2px solid rgba(236, 12, 46, 0.39);
 }
@@ -145,7 +141,7 @@ fieldset .btn-custom:hover {
 }
 
 form .btn-custom {
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(236, 12, 46, 0.64);
@@ -155,7 +151,7 @@ form .btn-custom {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   background-color: rgba(236, 12, 46, 0.64);
   border: 2px solid rgba(236, 12, 46, 0.39);
 }
@@ -164,7 +160,7 @@ form .btn-custom:hover {
 }
 
 header {
-  font-family: "Slabo 27px", serif;
+  font-family: "Slabo 27px, serif";
   background-color: rgba(0, 0, 0, 0.89);
   color: rgba(43, 41, 41, 0.171);
   padding: 20px 0;
@@ -214,13 +210,14 @@ nav ul li a {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans, sans-serif";
   background: #f7eadc;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   filter: none;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 1024px) {
   body body {
@@ -234,7 +231,7 @@ body {
 }
 
 main {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans, sans-serif";
   margin-top: 100px;
   max-width: 800px;
   margin: 0 auto;
@@ -242,8 +239,9 @@ main {
   padding: 20px;
   background-color: rgb(255, 255, 255);
 }
+main h1,
 main h2 {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans, sans-serif";
   font-size: 28px;
   color: #333;
   margin-bottom: 20px;
@@ -276,11 +274,15 @@ main .container {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 .testimonio p {
   font-size: 18px;
   line-height: 1.5;
   color: #555;
+}
+.testimonio .autor {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
 }
 
 .testimonios h2 {
@@ -288,18 +290,6 @@ main .container {
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
-}
-
-.testimonio .autor {
-  margin-top: 10px;
-  font-style: italic;
-  color: #777;
-}
-
-.autor {
-  margin-top: 10px;
-  font-style: italic;
-  color: #555;
 }
 
 @media (min-width: 992px) {
@@ -310,7 +300,7 @@ main .container {
   }
 }
 h2 {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans, sans-serif";
   font-size: 28px;
   color: #333;
   margin-bottom: 20px;
@@ -319,7 +309,7 @@ h2 {
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato, sans-serif";
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -343,7 +333,12 @@ aside .embed-responsive-16by9 iframe {
 }
 
 aside {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato, sans-serif";
+}
+aside .testimonial-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  text-align: center;
 }
 aside aside img {
   width: 100%;
@@ -353,15 +348,10 @@ aside aside img {
   aside aside img {
     max-height: none;
   }
-  aside .testimonial-section {
-    background-color: #f9f9f9;
-    padding: 30px;
-    text-align: center;
-  }
 }
 
 footer {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans, sans-serif";
   background-color: #333;
   color: rgb(255, 255, 255);
   text-align: center;

@@ -3,6 +3,6 @@
 }
 
 %fieldset-styles {
-  font-family: $font-lato;
+  font-family: map-get($font-families, "Lato");
   margin-bottom: 20px;
 }

@@ -13,7 +13,7 @@
 }
 
 @mixin label-styles {
-  font-family: $font-slabo-27;
+  font-family: map-get($font-families, "Slabo 27px");
   display: block;
   margin-bottom: 5px;
   font-size: $form-font-size;
@@ -31,7 +31,7 @@
 }
 
 @mixin button-styles {
-  font-family: $font-slabo-27;
+  font-family: map-get($font-families, "Slabo 27px");
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba($color-destacado-header, 0.64);
