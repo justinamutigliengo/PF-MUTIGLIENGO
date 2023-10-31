@@ -411,5 +411,19 @@ footer .footer-social a:hover {
     font-size: 14px;
   }
 }
+.cart {
+  position: relative;
+  margin-right: 20px;
+}
+.cart a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+.cart .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
 
 /*# sourceMappingURL=style.css.map */
