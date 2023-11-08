@@ -57,16 +57,16 @@
 
     <main class="mt-5">
       <h1>Alta de producto</h1>
-      <form>
+      <form action="form_alta_producto.html" method="post" enctype="">
         <fieldset>
           <div class="row">
             <div class="col-6">
-              <label for="nombre">Nombre</label>
-              <input id="nombre" type="text" />
+              <label for="nombre" name="nombre">Nombre</label>
+              <input id="nombre" type="text" name="nombre" />
             </div>
             <div class="col-6">
-              <label for="precio">Precio</label>
-              <input id="precio" type="number" />
+              <label for="precio" name="precio">Precio</label>
+              <input id="precio" type="number" name="precio" />
             </div>
           </div>
         </fieldset>
@@ -74,12 +74,12 @@
         <fieldset>
           <div class="row">
             <div class="col-6">
-              <label for="stock">Stock</label>
-              <input id="stock" type="number" />
+              <label for="stock" name="stock">Stock</label>
+              <input id="stock" type="number" name="stock"/>
             </div>
             <div class="col-6">
-              <label for="stock-minimo">Stock minimo</label>
-              <input id="stock-minimo" type="number" />
+              <label for="stock-minimo" name="stock-minimo">Stock minimo</label>
+              <input id="stock-minimo" type="number" name="stock-minimo"/>
             </div>
           </div>
         </fieldset>
@@ -87,12 +87,12 @@
         <fieldset>
           <div class="row">
             <div class="col-6">
-              <label for="fecha-alta">Fecha de alta</label>
-              <input id="fecha-alta" type="date" value="2021-08-27" />
+              <label for="fecha-alta" name="fecha-alta">Fecha de alta</label>
+              <input id="fecha-alta" type="date" value="2021-08-27" name="fecha-alta"/>
             </div>
             <div class="col-6">
-              <label for="hora-alta">Hora de alta</label>
-              <input id="hora-alta" type="time" value="15:58" />
+              <label for="hora-alta" name="hora-alta">Hora de alta</label>
+              <input id="hora-alta" type="time" value="15:58" name="hora-alta"/>
             </div>
           </div>
         </fieldset>
@@ -100,20 +100,20 @@
         <fieldset>
           <div class="row">
             <div class="col-5">
-              <img src="../images/" alt="" height="90px" />
+              <img src="../images/" alt="Imagen para dar de alta un producto" height="90px" />
 
-              <label for="archivo-imagen">Imagen</label>
-              <input id="archivo-imagen" type="file" />
+              <label for="archivo-imagen" name="archivo-imagen">Imagen</label>
+              <input id="archivo-imagen" type="file" name="archivo-imagen"/>
             </div>
           </div>
         </fieldset>
 
         <fieldset>
           <div class="col-3">
-            <label for="cuotas-sin-interes">Cuotas sin interes</label>
+            <label for="cuotas-sin-interes" name="cuotas-sin-interes">Cuotas sin interes</label>
           </div>
           <div class="col-4">
-            <select id="cuotas-sin-interes">
+            <select id="cuotas-sin-interes" name="cuotas-sin-interes">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6" selected>6</option>
@@ -126,12 +126,12 @@
         <fieldset>
           <div class="row">
             <div class="col-6">
-              <label for="origen-nacional">Nacional</label>
-              <input id="origen-nacional" type="radio" name="origen" />
+              <label for="origen-nacional" name="origen-nacional">Nacional</label>
+              <input id="origen-nacional" type="radio" name="origen-nacional" />
             </div>
             <div class="col-6">
-              <label for="origen-importado">Importado</label>
-              <input id="origen-importado" type="radio" name="origen" checked />
+              <label for="origen-importado" name="origen-importado">Importado</label>
+              <input id="origen-importado" type="radio" name="origen-importado" checked />
             </div>
           </div>
         </fieldset>
@@ -139,12 +139,12 @@
         <fieldset>
           <div class="row">
             <div class="col-6">
-              <label for="envio-gratis">Envio gratis</label>
-              <input id="envio-gratis" type="checkbox" checked />
+              <label for="envio-gratis" name="envio-gratis">Envio gratis</label>
+              <input id="envio-gratis" type="checkbox" checked name="envio-gratis"/>
             </div>
             <div class="col-6">
-              <label for="garantia">Garantia</label>
-              <input id="garantia" type="checkbox" />
+              <label for="garantia" name="garantia">Garantia</label>
+              <input id="garantia" type="checkbox" name="garantia"/>
             </div>
           </div>
         </fieldset>
@@ -154,7 +154,7 @@
         </fieldset>
 
         <fieldset>
-          <input type="submit" value="Guardar" class="btn-custom" />
+          <input type="submit" value="Guardar" class="btn-custom" name="area-texto"/>
         </fieldset>
       </form>
     </main>
